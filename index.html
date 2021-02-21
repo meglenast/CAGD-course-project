@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> PolarOfACurve2D </title>
+	<script type="text/javascript" src="polarOfACurve2D.js"> </script>
+	<script type="text/javascript" src="utilityFunc.js"> </script>
+
+	<style type="text/css">
+
+		#addBtn
+		{
+			-webkit-border-radius: 20px;
+   			-moz-border-radius: 20px;
+   			border-radius: 20px;
+   			color: #FFFFFF;
+   			font-family: Open Sans;
+   			font-size: 14px;
+   			font-weight: 100;
+   			padding: 13px;
+   			background-color: #618D88;
+   			text-decoration: none;
+   			display: inline-block;
+   			cursor: pointer;
+   			text-align: center;
+		}
+		#addBtn:hover 
+		{
+			background: #D2B09B;
+   			border: solid #FFFFFF 1px;
+   			-webkit-border-radius: 46px;
+   			-moz-border-radius: 46px;
+   			border-radius: 46px;
+   			text-decoration: none;
+		}
+
+		#drawCurveBtn
+		{
+			-webkit-border-radius: 20px;
+   			-moz-border-radius: 20px;
+   			border-radius: 20px;
+   			color: #FFFFFF;
+   			font-family: Open Sans;
+   			font-size: 14px;
+   			font-weight: 100;
+   			padding: 13px;
+   			background-color: #618D88;
+   			text-decoration: none;
+   			display: inline-block;
+   			cursor: pointer;
+   			text-align: center;
+		}
+		#drawCurveBtn:hover 
+		{
+			background: #D2B09B;
+   			border: solid #FFFFFF 1px;
+   			-webkit-border-radius: 46px;
+   			-moz-border-radius: 46px;
+   			border-radius: 46px;
+   			text-decoration: none;
+		}
+
+		#drawPolarBtn
+		{
+			-webkit-border-radius: 20px;
+   			-moz-border-radius: 20px;
+   			border-radius: 20px;
+   			color: #FFFFFF;
+   			font-family: Open Sans;
+   			font-size: 14px;
+   			font-weight: 100;
+   			padding: 13px;
+   			background-color: #618D88;
+   			text-decoration: none;
+   			display: inline-block;
+   			cursor: pointer;
+   			text-align: center;
+		}
+		#drawPolarBtn:hover 
+		{
+			background: #D2B09B;
+   			border: solid #FFFFFF 1px;
+   			-webkit-border-radius: 46px;
+   			-moz-border-radius: 46px;
+   			border-radius: 46px;
+   			text-decoration: none;
+		}
+
+		#clearBtn
+		{
+			-webkit-border-radius: 20px;
+   			-moz-border-radius: 20px;
+   			border-radius: 20px;
+   			color: #FFFFFF;
+   			font-family: Open Sans;
+   			font-size: 14px;
+   			font-weight: 100;
+   			padding: 13px;
+   			background-color: #618D88;
+   			text-decoration: none;
+   			display: inline-block;
+   			cursor: pointer;
+   			text-align: center;
+		}
+		#clearBtn:hover 
+		{
+			background: #D2B09B;
+   			border: solid #FFFFFF 1px;
+   			-webkit-border-radius: 46px;
+   			-moz-border-radius: 46px;
+   			border-radius: 46px;
+   			text-decoration: none;
+		}
+
+	</style>
+
+</head>
+
+<body onload="start()">
+	<h2>Polar 2D</h2>
+	<canvas id = "canvas" width = "640" height = "480" style="border:2px solid #000000;">
+		Canvas is not supported.
+	</canvas>
+	<br>
+	<!--MenuButtons-->
+	<button onclick="btnAddControlPoints_OnClick()" id= "addBtn" > Start adding control points </button>
+	<button onclick="btnDrawCurve_OnClick()"        id= "drawCurveBtn"> Draw curve  </button>
+	<button onclick="btnDrawPolar_OnClick()"        id= "drawPolarBtn"> Draw polar </button>
+	<button onclick="btnClear_OnClick()"            id="clearBtn"> Clear </button>
+	<!--TxtBox-->
+	<form >
+		<label for="fname">t value:</label><br>
+		<input type="text"  value="0" id="txtT"><br><br>
+	</form>
+	<br>
+</body>
+</html> 
