@@ -122,7 +122,6 @@ function calculateNext(t, pointsData)
 
 function deCasteljauAlgorithm(parameters, pointsData)
 {
-	var t1 = parameters[0];
 	if (!Array.isArray(parameters) || parameters.length != (pointsData.length - 1))
 	{
 		alert("Alert, wrong control points data..");
